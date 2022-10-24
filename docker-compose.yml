@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  redis:
+    container_name: redis
+    image: redis:latest
+  word-list:
+    container_name: word-list
+    image: word-list
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "9090:9090"
+    links:
+      - "redis:redis"
+    depends_on:
+      - redis
+    environment:
+      - "SPRING_PROFILES_ACTIVE=default"
+

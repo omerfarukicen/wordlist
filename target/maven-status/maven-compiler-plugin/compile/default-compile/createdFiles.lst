@@ -1,0 +1,7 @@
+tr/com/words/dto/Contact.class
+tr/com/words/controller/WordCorrectController.class
+tr/com/words/dto/WordListRequest.class
+tr/com/words/service/DictionaryService.class
+tr/com/words/WordApplication.class
+tr/com/words/utility/WordOperation.class
+tr/com/words/service/CacheService.class
